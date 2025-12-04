@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicios de Traducción · Lenguas Modernas</title>
+  <style>
+    :root {
+      --bg: #FFF7FA;           /* Blanco rosado tenue */
+      --panel: #F4BFD0;        /* Rosado elegante */
+      --ink: #2b2b2b;          /* Texto gris oscuro */
+      --accent: #E36A8D;       /* Rosado fuerte */
+      --border: #F8D6E2;       /* Bordes rosados suaves */
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: #ffffffaa;
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--panel);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    .cta-container button {
+      margin: 10px;
+      padding: 12px 22px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .primary-btn {
+      background: var(--accent);
+      color: white;
+    }
+
+    .secondary-btn {
+      background: var(--panel);
+      color: var(--ink);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 20px;
+      color: var(--accent);
+      text-align: center;
+    }
+
+    .services-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      background: var(--panel);
+      padding: 20px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+    }
+
+    details {
+      background: var(--panel);
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      border: 1px solid var(--border);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    iframe {
+      border-radius: 12px;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Traducción Profesional · Lenguas Modernas</h1>
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#metodologia">Metodología</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="badge">Traducción remota · EN | ES | FR | DE</div>
+  <h2>Servicios profesionales de traducción en cuatro idiomas</h2>
+  <p>Ofrezco soluciones lingüísticas claras, precisas y adaptadas al propósito comunicativo de cada proyecto. Trabajo con textos en español, inglés, francés y alemán.</p>
+
+  <div class="cta-container">
+    <button class="primary-btn" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Solicitar traducción</button>
+    <button class="secondary-btn" onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})">Ver servicios</button>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <h2>Servicios</h2>
+  <p style="text-align:center; max-width:600px; margin:auto;">Traducción remota especializada en documentos generales, contenido digital y textos profesionales.</p>
+
+  <div class="services-grid">
+    <div class="card">
+      <h3>Traducción general</h3>
+      <p>Textos informativos, correos, artículos, guías y contenido web.</p>
+    </div>
+
+    <div class="card">
+      <h3>Revisión y corrección</h3>
+      <p>Ajuste de gramática, claridad, coherencia y estilo.</p>
+    </div>
+
+    <div class="card">
+      <h3>Adaptación textual</h3>
+      <p>Reformulación de contenido para contextos académicos o profesionales.</p>
+    </div>
+  </div>
+</section>
+
+<!-- METODOLOGÍA -->
+<section id="metodologia">
+  <h2>Metodología</h2>
+  <div class="card" style="margin-bottom:15px;">
+    <strong>1. Análisis del contenido</strong>
+    <p>Revisión del texto original y comprensión del propósito comunicativo.</p>
+  </div>
+  <div class="card" style="margin-bottom:15px;">
+    <strong>2. Traducción precisa</strong>
+    <p>Adaptación fiel respetando tono, intención y coherencia.</p>
+  </div>
+  <div class="card" style="margin-bottom:15px;">
+    <strong>3. Revisión final</strong>
+    <p>Corrección minuciosa para entregar un texto claro y fluido.</p>
+  </div>
+  <div class="card">
+    <strong>4. Entrega digital</strong>
+    <p>Formato solicitado (Word, PDF u otros) y disponibilidad para ajustes.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <h2>Preguntas frecuentes</h2>
+
+  <details>
+    <summary>¿En qué idiomas trabajo?</summary>
+    Español, inglés, francés y alemán.
+  </details>
+
+  <details>
+    <summary>¿Qué tipo de textos traduzco?</summary>
+    Documentos generales, textos profesionales, contenido digital e información institucional.
+  </details>
+
+  <details>
+    <summary>¿Cómo entrego los archivos?</summary>
+    En formato Word, PDF o según tu preferencia.
+  </details>
+
+  <details>
+    <summary>¿Cuánto tarda una traducción?</summary>
+    Depende de la extensión, pero siempre ofrezco tiempos claros y entregas puntuales.
+  </details>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p style="text-align:center; max-width:600px; margin:auto;">Complete el siguiente formulario para solicitar una traducción o realizar una consulta.</p>
+
+  <div style="width:100%; max-width:700px; margin:auto; margin-top:20px;">
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSfBhdTECutLD2DCS_BgbgoaScWIu8e0erY8vcVteJvkvRXbXw/viewform?embedded=true" 
+      width="100%" 
+      height="900" 
+      frameborder="0" 
+      marginheight="0" 
+      marginwidth="0"
+      style="border: 1px solid var(--border); border-radius: 12px; background:white;"
+    >Cargando…</iframe>
+  </div>
+</section>
+
+<footer>
+  © 2025 · Traducción Profesional · Lenguas Modernas
+</footer>
+
+<script>
+  // Scroll suave ya manejado con buttons en el hero.
+</script>
+
+</body>
+</html>
